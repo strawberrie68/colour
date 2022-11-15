@@ -19,6 +19,21 @@ let rightColor = wrongRandomColor.replace(wrongRandomColor[0],function myFunctio
     }
 })
 
+for(let i =0; i<4; i++){
+
+}
+
+tiles[Math.floor(Math.random()*15)].style.backgroundColor = '#'+ wrongRandomColor
+tiles[Math.floor(Math.random()*15)].style.backgroundColor = '#'+ wrongRandomColor
+tiles[Math.floor(Math.random()*15)].style.backgroundColor = '#'+ wrongRandomColor
+tiles[Math.floor(Math.random()*15)].style.backgroundColor = '#'+ rightColor
+tiles[Math.floor(Math.random()*15)].style.backgroundColor = '#'+ rightColor
+tiles[Math.floor(Math.random()*15)].style.backgroundColor = '#'+ rightColor
+tiles[Math.floor(Math.random()*15)].style.backgroundColor = '#'+ rightColor
+tiles[Math.floor(Math.random()*15)].style.backgroundColor = '#'+ rightColor
+
+
+
 
 console.log(wrongRandomColor)
 console.log(rightColor)

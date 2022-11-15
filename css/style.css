@@ -36,22 +36,22 @@ h1{
 .container {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 33% 33% 33%;
-    max-width: 300px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    max-width: 400px;
 
 }
 
 .tile {
     border: 1px solid white;
-    min-width: 100px;
-    min-height: 100px;
+    min-width: 40px;
+    min-height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 50px;
     cursor: pointer;
-    border-color: black;
+
     
 }
 
