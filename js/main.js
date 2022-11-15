@@ -10,21 +10,25 @@ window.addEventListener('DOMContentLoaded', () => {
 let wrongRandomColor = Math.floor(Math.random()*16777215).toString(16);
 let hexColour = "123456789abcdefghijklmnopqrstuvwxyz".split('')
 
-let rightRandomColor = 
- hexColour.indexOf(wrongRandomColor.charAt(4))
-if(indexColour ===  34){
-    indexColour-=1
-    rightRandomColor.replace(wrongRandomColor[4],hexColour[indexColour] )
-}
-else{
-    indexColour += 1
-    rightRandomColor.replace(wrongRandomColor[4],hexColour[indexColour] )
-}
+//gets the rightcolour that is one letter/number off right hex code
+let rightColor = wrongRandomColor.replace(wrongRandomColor[0],function myFunction(z) {
+    if(hexColour.indexOf(String(z)) === 34){
+        return hexColour[0]
+    }else{
+        return hexColour[hexColour.indexOf(String(z))+1]
+    }
+})
+
 
 console.log(wrongRandomColor)
-console.log(rightRandomColor)
+console.log(rightColor)
+
+})
 
 
+
+
+// console.log(hexColour[Math.floor(Math.random()*32)])
 //need to idenify the last charater
 
 //and match to the array then add one
@@ -46,5 +50,3 @@ console.log(rightRandomColor)
 
 
 
-
-})
